@@ -1,4 +1,4 @@
-# Reks | Portfolio 🚀
+#Portfolio 🚀
 
 Welcome to my personal portfolio — built with **Next.js**, **Tailwind CSS**, and **TypeScript**.  
 I showcase my projects, certifications, and offer an easy way to contact me.
