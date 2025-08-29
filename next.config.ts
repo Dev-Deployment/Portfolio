@@ -1,11 +1,12 @@
 // next.config.ts
-const isProd = process.env.NODE_ENV === 'production'
+import type { NextConfig } from "next";
 
-export default {
-  output: 'export',                 // <-- creates static site in /out
-  trailingSlash: true,              // <-- ensures /page/index.html works on Pages
-  images: { unoptimized: true },    // <-- make next/image static-friendly
-  // If you're using a *project* page (username.github.io/<repo>), fill in your repo name:
-  basePath: isProd ? 'https://github.com/Dev-Deployment/Portfolio' : undefined,
-  assetPrefix: isProd ? 'https://github.com/Dev-Deployment/Portfolio' : undefined,
-}
+const nextConfig: NextConfig = {
+  output: "export",
+  images: { unoptimized: true },
+  basePath: "/Portfolio",         // <-- replace with your repo name
+  assetPrefix: "/Portfolio",
+  trailingSlash: true
+};
+
+export default nextConfig;
