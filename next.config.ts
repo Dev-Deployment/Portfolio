@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
 
   // ✅ Stop the “selected root directory” warning
   outputFileTracingRoot: __dirname,
+
 };
 
 export default nextConfig;
